@@ -1,0 +1,33 @@
+
+
+@mixin btn($line-size : 1px, $line-style: solid, $color: black, $radius: 0, $bck-color: none, $padding: 10px,){
+    border: $line-size $line-style $color;
+    border-radius: $radius;
+    background: $bck-color;
+    padding: $padding;
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin burger ($width: 40px, $height: 40px,$line-size : 1px, $line-style: solid, $color: black, $radius: 15px, $height-span: 4%){
+    width: $width;
+    height: $height;
+    border: $line-size $line-style $color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: $radius;
+    span {
+        width: 60%;
+        height: $height-span;
+        background: $color;
+        margin: 10% 0;
+        border-radius: $radius;
+    }
+}
+
+@mixin position {
+    
+}
