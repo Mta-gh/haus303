@@ -1,1 +1,15 @@
 // Importing fonts : use @import
+
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+@font-face {
+    font-family: "Mattone";
+    src: url("../assets/Mattone-150.woff") format("woff2"),
+        url("../assets/Mattone-150.woff2") format("woff");
+  }
+
+  @font-face {
+    font-family: "Ortica";
+    src: url("../assets/Ortica-Light.woff") format("woff2"),
+        url("../assets/Ortica-Light.woff2") format("woff");
+  }
