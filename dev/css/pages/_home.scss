@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+    img {
+        max-width: 100%;
+    }
+}
+.wrapper {
+    max-width: 1500px;
+    width: 1500px;
+    margin: 0 auto;
+}
