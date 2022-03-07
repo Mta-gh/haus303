@@ -4,6 +4,9 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    @media screen and (max-width: 1366px) {
+        width: calc(10vw + 5%);
+    }
     img {
         max-width: 100%;
         filter: drop-shadow(0 0 8px blue);
