@@ -1,6 +1,9 @@
 .logo {
     width: 10vw;
     margin: 5vh auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     img {
         max-width: 100%;
         filter: drop-shadow(0 0 8px blue);
