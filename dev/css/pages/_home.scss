@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     gap: 1em;
+    padding-top: 2em;
     @media screen and (max-width: 1366px) {
         grid-template-columns: repeat(4, 1fr);
     }
