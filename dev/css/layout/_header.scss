@@ -11,4 +11,40 @@
         max-width: 100%;
         filter: drop-shadow(0 0 8px blue);
     }
+    .hausBlob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        // animation: appear1 5s infinite;
+
+    }
+    // .hausSguigg {
+    //     // animation: appear1 5s infinite;
+    //     // animation-delay: 2.5s;
+    // }
+}
+
+@keyframes appear1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+}
+}
+
+@keyframes appear2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+}
 }
