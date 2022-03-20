@@ -17,11 +17,11 @@ let sguigg = document.querySelector(".hausSguigg");
 (function() {     // function expression closure to contain variables
     var i = 0;
     var pics = [ "img/hausSquiggRender.png", "img/blobH.png" ];
-    var el = document.getElementById('logo-img');  // el doesn't change
+    var logo = document.getElementById('logo-img');  // el doesn't change
     console.log(el)
 
     function toggle() {
-        el.src = pics[i];           // set the image
+        logo.src = pics[i];           // set the image
         i = (i + 1) % pics.length;  // update the counter
     }
     setInterval(toggle, 300000);
