@@ -8,9 +8,10 @@
     align-items: center;
     transform-style: preserve-3d;
     perspective: 1000px;
+    cursor: pointer;
     .threedbook {
-        height: 567px;
-        width: 383px;
+        height: 419px;
+        width: 100%;
         position: relative;
         transition: .5s;
         transform-style: preserve-3d;
