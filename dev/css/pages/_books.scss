@@ -2,19 +2,22 @@
     .logo {
         width: 6vw;
     }
+    .wrapper {
+        padding-top: 5em;
+    }
 }
 
 // CSS 3d books
 
-.book-sect {
+.book-article {
     display: flex;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
     perspective: 1000px;
+    padding: 1.5em;
     cursor: pointer;
     .threedbook {
-        height: 412px;
         aspect-ratio: 202 / 311;
         width: 100%;
         position: relative;

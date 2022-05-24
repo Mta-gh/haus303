@@ -4,12 +4,13 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 666;
     @media screen and (max-width: 1366px) {
         width: calc(10vw + 5%);
     }
     img {
         max-width: 100%;
-        filter: drop-shadow(0 0 8px blue);
+        filter: drop-shadow(0 0 4px rgba(0, 0, 255, 0.692));
     }
     .hausBlob {
         position: absolute;

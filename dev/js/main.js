@@ -18,7 +18,6 @@ let sguigg = document.querySelector(".hausSguigg");
     var i = 0;
     var pics = [ "img/hausSquiggRender.png", "img/blobH.png" ];
     var logo = document.getElementById('logo-img');  // el doesn't change
-    console.log(el)
 
     function toggle() {
         logo.src = pics[i];           // set the image
@@ -26,3 +25,17 @@ let sguigg = document.querySelector(".hausSguigg");
     }
     setInterval(toggle, 300000);
 })();             // invoke the function expression
+
+
+// Onclick event for books
+
+let bookArticle = document.querySelectorAll('.book-article')
+
+for (let i = 0; i<bookArticle.length; i++) {
+    bookArticle[i].addEventListener("click", function(){
+        console.log(bookArticle);
+    });
+}
+
+
+
