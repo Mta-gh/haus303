@@ -1,5 +1,25 @@
 .about {
+    .logo {
+        // width: 6vw;
+        margin: 3vh auto;
+    }
+    .wrapper {
+        padding-top: 10em;
+    }
     .main {
         display: flex;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-areas: 
+        // "eng ."
+        // ". fr";
+        
+        // ;
+        // .about-fr {
+        //     grid-area: fr;
+        // }
+        // .about-eng {
+        //     grid-area: eng;
+        // }
     }
 }
