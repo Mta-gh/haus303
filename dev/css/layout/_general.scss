@@ -10,3 +10,20 @@ p {
     margin: 0 auto;
     padding-top: 3em;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3em;
+    padding-top: 2em;
+    @media screen and (max-width: 1366px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    img {
+        max-width: 100%;
+    }
+}
+

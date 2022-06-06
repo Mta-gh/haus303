@@ -27,6 +27,21 @@
     // }
 }
 
+
+.books, .about {
+    .logo {
+        width: 6vw;
+        margin: 3vh auto;
+        img {
+            filter: drop-shadow(0 0 2px rgba(0, 0, 255, 0.692));
+        }
+    }
+    .wrapper {
+        padding-top: 10em;
+    }
+    
+}
+
 @keyframes appear1 {
     0% {
         opacity: 1;

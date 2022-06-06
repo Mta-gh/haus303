@@ -1,18 +1,4 @@
-.main {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    gap: 1em;
-    padding-top: 2em;
-    @media screen and (max-width: 1366px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    img {
-        max-width: 100%;
-    }
-}
+
 
 .slide-up {
     width: 100vw;
@@ -42,7 +28,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: loading 1s forwards;
+    animation: loading .7s forwards;
     z-index: 999;
     img {
         max-width: 100%;
