@@ -1,4 +1,4 @@
 # haus303
 
 
-mta-gh.github.io/haus303/prod/index.html
+https://mta-gh.github.io/haus303/prod/index.html
