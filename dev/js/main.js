@@ -1,9 +1,5 @@
-
-
-
-
-
-let blob = document.querySelector(".hausBlob");
+// For logo change
+// let blob = document.querySelector(".hausBlob");
 let sguigg = document.querySelector(".hausSguigg");
 
 
@@ -12,21 +8,20 @@ let sguigg = document.querySelector(".hausSguigg");
 
 // }, 3000)
 
-(function() {     // function expression closure to contain variables
-    var i = 0;
-    var pics = [ "img/hausSquiggRender.png", "img/blobH.png" ];
-    var logo = document.getElementById('logo-img');  // el doesn't change
+// (function() {     // function expression closure to contain variables
+//     var i = 0;
+//     var pics = [ "img/hausSquiggRender.png", "img/blobH.png" ];
+//     var logo = document.getElementById('logo-img');  // el doesn't change
     
-    function toggle() {
-        logo.src = pics[i];           // set the image
-        i = (i + 1) % pics.length;  // update the counter
-    }
-    setInterval(toggle, 300000);
-})();             // invoke the function expression
+//     function toggle() {
+//         logo.src = pics[i];           // set the image
+//         i = (i + 1) % pics.length;  // update the counter
+//     }
+//     setInterval(toggle, 300000);
+// })();             // invoke the function expression
 
 
 // Onclick event for books
-
 let bookArticle = document.querySelectorAll('.book-article')
 
 for (let i = 0; i<bookArticle.length; i++) {
@@ -34,7 +29,6 @@ for (let i = 0; i<bookArticle.length; i++) {
         console.log(bookArticle);
     });
 }
-
 
 function mainContentAnim() {
 	let tl = gsap.timeline();
@@ -69,7 +63,6 @@ function init() {
         transitions: [{
             name: 'default-transition',
             leave() {
-                // create your stunning leave animation here
             },
             enter(data) {
                 mainContentAnim()
@@ -78,3 +71,6 @@ function init() {
     });
 }
 init()
+
+
+

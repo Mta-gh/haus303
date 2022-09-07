@@ -27,7 +27,7 @@
 	text-orientation: sideways-right;
 	display: flex;
 	flex-direction: column;
-	z-index: 66;
+	z-index: 3;
 
 	.star {
 		color: blue;
@@ -41,9 +41,9 @@
 
 .marquee {
 	// border-left: 1px solid black;
-	width: 2.5em;
+	// width: 2.5em;
 	box-shadow: $box-shadow;
-	z-index: 222;
+	z-index: 3;
 	background-color: $white;
 
 }
@@ -60,6 +60,7 @@
 	animation: marquee 25s linear infinite;
 	display: inline-flex;
 	padding-right: 10px;
+	padding-left: 10px;
 }
 
 

@@ -4,7 +4,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 666;
+    z-index: 3;
     mix-blend-mode: color;
     @media screen and (max-width: 1366px) {
         width: calc(10vw + 5%);

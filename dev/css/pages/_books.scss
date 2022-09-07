@@ -10,19 +10,22 @@
     perspective: 1000px;
     padding: 1.5em;
     cursor: pointer;
+    &:hover .threedbook {
+        transform: rotateY(180deg);
+    }
     .threedbook {
         aspect-ratio: 202 / 311;
         width: 100%;
         position: relative;
         transition: .5s;
         transform-style: preserve-3d;
-        &:hover {
-            transform: rotateY(35deg);
-        }
+        // &:hover {
+        //     transform: rotateY(180deg);
+        // }
         
-        &:active {
-            transform: rotateY(180deg);
-        }
+        // &:active {
+        //     transform: rotateY(180deg);
+        // }
         &::before {
             content: '';
             position: absolute;
@@ -53,10 +56,3 @@
         }
     }
 }  
-
-
-
-
-
-
-
