@@ -1,4 +1,5 @@
 .book-pop__up {
+  position: relative;
   width: 70vw;
   height: 70vh;
   position: absolute;
@@ -7,7 +8,10 @@
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 4rem;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  padding: 4rem 6rem 4rem 3rem;
   background: $white;
   box-shadow: $box-shadow;
 }
@@ -15,4 +19,53 @@
 .pop__up-book__details {
   font-family: $title-font;
   font-size: 1.3rem;
+}
+
+.pop__up-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 3rem;
+  img {
+    // max-width: 66%;
+  }
+}
+
+.swiper {
+  width: 25rem;
+  cursor: e-resize;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+  top: 0;
+  width: 15%;
+  height: 100%;
+  margin-top: 0;
+  &::after {
+    display: none;
+  }
+}
+
+.pop__up__cross {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .cross__line {
+    position: absolute;
+    width: 100%;
+    border: 1px solid $black;
+  }
+  .cross__line:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+  .cross__line:nth-of-type(2) {
+    transform: rotate(-45deg);
+  }
 }

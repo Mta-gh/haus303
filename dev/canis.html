@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.min.css">
     <title>🔥 haus303 🏡</title>
 </head>
@@ -59,7 +63,7 @@
     </header>
     <!-- Main start -->
     <div class="wrapper">
-        <main class="main" data-barba="container" data-barba-namespace="canis">
+        <main class="main" data-barba="container" data-barba-namespace="canis" >
             
             <article class="book-article canis">
                 <h2></h2>
@@ -94,12 +98,39 @@
             </article>
             
             <section class="book-pop__up" >
-                <div class="pop__up-visual"></div>
+                <div class="pop__up-visual">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/cans018.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/cans018.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/cans018.jpg" alt="">
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
                 <article class="pop__up-text">
+                    <div class="pop__up__cross" onclick="history.back()">
+                        <span class="cross__line"></span>
+                        <span class="cross__line"></span>
+                    </div>
                     <h2>Canis</h2>
                     <span class="pop__up-book__details">2019 - 12 pages</span>
                     <p class="pop__up-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquam nesciunt veniam architecto incidunt natus consequatur animi voluptatibus distinctio quia voluptas nostrum culpa ex sapiente, facilis iusto qui dolore nobis.
+                        Ce projet part d’une volonté d’explorer les liens entre l’humain et l’animal, et notamment l’idée de la coévolution ainsi que l’idée de symbiose entre chien et humain, lien étroit existant depuis des millénaires; et d’expérimenter comment prendre en photo les animaux, se mettre à son niveau physique, ou essayer de voir comment il appréhende son environnement.
+                    </p>
+                    <p class="pop__up-desc">
+                        C’est aussi, et surtout, simplement l’histoire d’un homme, mon père, et son chien, Roméo, de leurs interactions et un bref aperçu de leur vie.
                     </p>
                 </article>
             </section>
@@ -108,6 +139,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -56,3 +56,28 @@
         }
     }
 }  
+
+.trajec .threedbook {
+    aspect-ratio: 202 / 274;
+    &::before {
+        width: 1.3rem;
+        background: url(../img/traj017_back.webp) center/cover;
+    }
+    &::after {
+        background: url(../img/traj017_back.webp) center/cover;
+        transform: rotateY(180deg) translateZ(1rem);
+    }
+}
+
+.front__seine .threedbook {
+    aspect-ratio: 202 / 287;
+    &::before {
+        width: .8rem;
+        background: url(../img/fds015_back.webp) center/cover;
+        filter: brightness(.8);
+    }
+    &::after {
+        background: url(../img/fds015_back.webp) center/cover;
+        transform: rotateY(180deg) translateZ(.8rem);
+    }
+}

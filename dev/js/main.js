@@ -12,7 +12,7 @@
 //     var i = 0;
 //     var pics = [ "img/hausSquiggRender.png", "img/blobH.png" ];
 //     var logo = document.getElementById('logo-img');  // el doesn't change
-    
+
 //     function toggle() {
 //         logo.src = pics[i];           // set the image
 //         i = (i + 1) % pics.length;  // update the counter
@@ -31,22 +31,22 @@ for (let i = 0; i<bookArticle.length; i++) {
 }
 
 function mainContentAnim() {
-	let tl = gsap.timeline();
-	tl.from(".main", {
-		duration: 0.8,
-		opacity: 0,
+    let tl = gsap.timeline();
+    tl.from(".main", {
+        duration: 0.8,
+        opacity: 0,
         filter: "blur(45px)",
-		// scale: 0,
-		ease: "back",
-	})
+        // scale: 0,
+        ease: "back",
+    })
 };
 
 function helloHello() {
-	// let tl = gsap.timeline();
-	gsap.to(".main", {
-		duration: 0.8,
-		y: -2000,
-	});
+    // let tl = gsap.timeline();
+    gsap.to(".main", {
+        duration: 0.8,
+        y: -2000,
+    });
     console.log('hello hello')
 };
 
@@ -55,7 +55,7 @@ function singleBookAnim() {
     let tl = gsap.timeline();
     tl.from(".book-pop__up", {
         duration: 0.8,
-		opacity: 0,
+        opacity: 0,
         scale: 1.2,
         filter: "blur(45px)",
         display:"none",
@@ -67,7 +67,7 @@ function singleBookAnimLeave() {
     let tl = gsap.timeline();
     tl.to(".book-pop__up", {
         duration: 0.3,
-		opacity: 0,
+        opacity: 0,
         scale: 1.2,
         y: -200
     })
@@ -96,8 +96,8 @@ function init() {
     //     x: 130,
     //     duration: .6,
     // }, "<");
-
-
+    
+    
     tlSideBar.from(".marquee2", {
         x: -130,
         duration: .6,
@@ -105,7 +105,7 @@ function init() {
         x: -130,
         duration: .6,
     });
-
+    
     barba.init({
         transitions: [{
             name: 'general-transition',
@@ -124,6 +124,28 @@ function init() {
             }
         }]
     });
+    // swiper
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        
+        // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+    });
 }
 init()
 
@@ -136,7 +158,7 @@ init()
 //     pageTransition();
 //     await delay(1000);
 //     done();
-    
+
 // },
 //  async enter(data) {
 //     // gsap.set(".overlay__transition", { opacity: 0 });
