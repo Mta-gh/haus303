@@ -5,7 +5,8 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    mix-blend-mode: color;
+    // mix-blend-mode: color;
+    transform-origin: top;
     @media screen and (max-width: 1366px) {
         width: calc(10vw + 5%);
     }
