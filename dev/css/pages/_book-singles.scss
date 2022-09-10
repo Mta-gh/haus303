@@ -1,3 +1,13 @@
+.single__book {
+  display: flex;
+  flex-direction: column;
+  .swiper { width: 100%; }
+  P {
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+  }
+}
+
 .book-pop__up {
   position: relative;
   width: 70vw;
@@ -6,6 +16,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // remove on phase 2
+  margin-left: 5.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -26,9 +38,6 @@
   justify-content: center;
   align-items: center;
   // padding: 3rem;
-  img {
-    // max-width: 66%;
-  }
 }
 
 .swiper {
@@ -39,13 +48,38 @@
 
 .swiper-button-next, .swiper-button-prev {
   top: 0;
-  width: 15%;
+  width: 20%;
   height: 100%;
   margin-top: 0;
+  opacity: 0;
+  background: rgba(255,255,255,0);
+  transition: all .2s ease-in-out;
   &::after {
     display: none;
   }
+  &:hover { 
+    opacity: 1;
+  }
 }
+
+.swiper-button-next {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 100%); 
+}
+
+.swiper-button-prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+}
+
+.front__seine {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 .pop__up__cross {
   position: absolute;

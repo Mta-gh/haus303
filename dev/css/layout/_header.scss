@@ -6,6 +6,8 @@
     transform: translateX(-50%);
     z-index: 3;
     // mix-blend-mode: color;
+    // remove on phase 2
+    margin-left: 5.2rem;
     transform-origin: top;
     @media screen and (max-width: 1366px) {
         width: calc(10vw + 5%);
@@ -20,49 +22,42 @@
         left: 0;
         opacity: 0;
         // animation: appear1 5s infinite;
-
+        
     }
     // .hausSguigg {
-    //     // animation: appear1 5s infinite;
-    //     // animation-delay: 2.5s;
-    // }
-}
-
-
-.books, .about {
-    .logo {
-        width: 6vw;
-        margin: 3vh auto;
+        //     // animation: appear1 5s infinite;
+        //     // animation-delay: 2.5s;
+        // }
+    }
+    
+    
+    .logo__s {
+        width: 10vw;
         img {
             filter: drop-shadow(0 0 2px rgba(0, 0, 255, 0.692));
         }
     }
-    .wrapper {
-        padding-top: 10em;
+    
+    @keyframes appear1 {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     
-}
-
-@keyframes appear1 {
-    0% {
-        opacity: 1;
+    @keyframes appear2 {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-}
-}
-
-@keyframes appear2 {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-}
-}

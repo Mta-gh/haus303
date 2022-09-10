@@ -1,6 +1,24 @@
 .about.main {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 30vh;
+    align-items: flex-start;
+    flex-direction: column;
+    // padding-top: 30vh;
+    .about-eng { 
+        width: 66%; 
+    }
+    .img__container {
+        position: absolute;
+        width: 50%;
+        height: 40rem;
+        top: 50%;
+        right: 0;
+        z-index: -1;
+        background: url("../img/6 piscos third.jpg") center/cover;
+        align-self: flex-end;
+    }
+    p {
+        text-shadow: 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white ;
+    }
 }

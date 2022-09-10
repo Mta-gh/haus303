@@ -81,3 +81,15 @@
         transform: rotateY(180deg) translateZ(.8rem);
     }
 }
+
+.beton .threedbook {
+    aspect-ratio: 202 / 288;
+    &::before {
+        width: .3rem;
+        background: #f0f2e6;
+    }
+    &::after {
+        background: url(../img/journal-bk.webp) center/cover;
+        transform: rotateY(180deg) translateZ(.3rem);
+    }
+}
