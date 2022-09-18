@@ -5,6 +5,12 @@
     align-items: flex-start;
     flex-direction: column;
     // padding-top: 30vh;
+    ul,
+    p {
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        text-shadow: 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white ;
+    }
     .about-eng { 
         width: 66%; 
     }
@@ -17,8 +23,5 @@
         z-index: -1;
         background: url("../img/6 piscos third.jpg") center/cover;
         align-self: flex-end;
-    }
-    p {
-        text-shadow: 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white, 0 0 3px $white ;
     }
 }

@@ -74,7 +74,7 @@ gulp.task('browser-sync', function() {
 // copy images to prod/img
 gulp.task('imgification', function() {
     return gulp.src("dev/img/*")
-    .pipe(gulp.dest('prod/img'));
+    .pipe(gulp.dest("prod/img"));
 });
 
 
@@ -84,8 +84,9 @@ gulp.task('imgification', function() {
 gulp.task('observation', gulp.parallel('browser-sync', 'sassification', 'htmlification', 'jsification', 'imgification', function(){
     gulp.watch('dev/css/**/*.scss', gulp.series('sassification'));
     gulp.watch('dev/*.html', gulp.series('htmlification'));
-    // gulp.watch('dev/img/*', gulp.series('imgification'));
     gulp.watch('dev/js/*.js', gulp.series('jsification'));
+    gulp.watch('dev/img/*', gulp.series('imgification'));
+
     gulp.watch('prod/**/*').on('change', browserSync.reload);
 
 

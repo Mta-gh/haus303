@@ -95,6 +95,7 @@ function swiper() {
 
 function init() {
     let tlSideBar = gsap.timeline();
+    // // For phase 2
     // tlSideBar.from(".marquee2", {
     //     x: -130,
     //     duration: .6,
@@ -123,18 +124,10 @@ function init() {
         transitions: [{
             name: 'general-transition',
             async leave(data) {
-                // return gsap.to(".main", {
-                //     duration: 0.6,
-                //     y: -500,
-                //     opacity: 0
-                // });
-                // helloHello()
                 swiper()
 
             },
             async enter(data) {
-                // mainContentAnim();
-                // singleBookAnim()
                 swiper()
             },
             async once(data) {
