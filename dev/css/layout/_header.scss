@@ -1,3 +1,27 @@
+.header,
+.header__bg {
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        height: 7rem;
+        position: fixed;
+    }
+}
+
+.header {
+    position: fixed;
+    z-index: 3;
+}
+
+.header__bg {
+    display: none;
+    z-index: 2;
+    background: $white;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+    }
+}
+
 .logo {
     width: 10vw;
     margin: 5vh auto;
@@ -9,55 +33,54 @@
     // remove on phase 2
     margin-left: 5.2rem;
     transform-origin: top;
-    @media screen and (max-width: 1366px) {
-        width: calc(10vw + 5%);
-    }
     img {
         max-width: 100%;
         filter: drop-shadow(0 0 4px rgba(0, 0, 255, 0.692));
     }
-    .hausBlob {
-        position: absolute;
-        top: 0;
-        left: 0;
+    @media screen and (max-width: 1366px) {
+        width: calc(10vw + 5%);
+    }
+    @media screen and (max-width: 1080px) {
+        margin-left: 0;
+        margin-top: 7vh;
+    }
+    @media screen and (max-width: 768px) {
+        left: 4rem;
+        top: 1rem;
+        margin: 0;
+        width: 4rem;
+        img { filter: drop-shadow(0 0 2px rgba(0, 0, 255, 0.692)); }
+    }
+}
+
+
+.logo__s {
+    width: 10vw;
+    img {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 255, 0.692));
+    }
+}
+
+@keyframes appear1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
         opacity: 0;
-        // animation: appear1 5s infinite;
-        
     }
-    // .hausSguigg {
-        //     // animation: appear1 5s infinite;
-        //     // animation-delay: 2.5s;
-        // }
+    100% {
+        opacity: 1;
     }
-    
-    
-    .logo__s {
-        width: 10vw;
-        img {
-            filter: drop-shadow(0 0 2px rgba(0, 0, 255, 0.692));
-        }
+}
+
+@keyframes appear2 {
+    0% {
+        opacity: 0;
     }
-    
-    @keyframes appear1 {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    50% {
+        opacity: 1;
     }
-    
-    @keyframes appear2 {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+    100% {
+        opacity: 0;
     }
+}

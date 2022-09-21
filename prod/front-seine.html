@@ -10,7 +10,13 @@
   <title>🔥 haus303 - Front de Seine</title>
 </head>
 <body class="books" data-barba="wrapper">
-  <header>
+  <header class="header">
+    <div class="burger__menu">
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+  </div>
+  <div class="header__bg"></div>
     <a href="https://haus303.xyz" class="logo">
       <img src="img/hausSquiggRender.png" alt="" class="hausSguigg" id="logo-img">
     </a>
@@ -26,57 +32,73 @@
       </div>
       <nav class="main-nav nav-left">
         <!-- <a href="">Photography</a> -->
-        <a href="haus303.xyz">Home</a>
+        <a href="https://haus303.xyz">Home</a>
         <a href="books">Books</a>
         <a href="about">About</a>
-        <a href="contact">Contact</a>
+        <a href="about#contact__us">Contact</a>
         <!-- <a href="">Exhibitions</a> -->
         <!-- <a href="">Graphic Design</a> -->
       </nav>
       
     </div>
     
+    <div class="top__bar">
+      <div class="marquee marquee3">
+        <div >
+          <p >
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+          </p>
+        </div>
+      </div>
+      <nav class="main-nav top__nav">
+        <a href="https://haus303.xyz">Home</a>
+        <a href="books">Books</a>
+        <a href="about">About</a>
+        <a href="about#contact__us">Contact</a>
+      </nav>
+    </div>
   </header>
   <!-- Main start -->
   <div class="wrapper">
     <main class="main single__book front__seine" data-barba="container" data-barba-namespace="canis" >
-        <div class="pop__up-visual">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/fds015-slide1.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/fds015-slide2.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/fds015-slide3.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/fds015-slide4.webp" alt="">
-              </div>
+      <div class="pop__up-visual">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/fds015-slide1.webp" alt="">
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-slide">
+              <img src="img/fds015-slide2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/fds015-slide3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/fds015-slide4.webp" alt="">
+            </div>
           </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <article class="pop__up-text">
-          <div class="pop__up__cross" onclick="history.back()" >
-            <span class="cross__line"></span>
-            <span class="cross__line"></span>
-          </div>
-          <h2>Front de Seine</h2>
-          <span class="pop__up-book__details">2017 - 64 pages</span>
-          <p class="pop__up-desc">
-            Front de Seine is an urban development started in the 1970s and situated in the 15th arrondissement of Paris. Comprised of several skyscrapers essentially in modernist styles and placed on a raised slab is a rare site in Paris, and is a great playground for any photographer interested in 20th century architecture.
-          </p>
-          <p class="pop__up-desc">
-            Taken in the space of a winter afternoon to evening, using pushed film, the photographs, and the ensuing book (inspired by french science fiction books of the 70S), show a subjective point of view, sometimes veering on abstraction, of the different buildings and architectural elements of the Front de Seine towering of the pedestrian.
-          </p>
-        </article>
+      </div>
+      <article class="pop__up-text">
+        <div class="pop__up__cross" onclick="history.back()" >
+          <span class="cross__line"></span>
+          <span class="cross__line"></span>
+        </div>
+        <h2>Front de Seine</h2>
+        <span class="pop__up-book__details">2017 - 64 pages</span>
+        <p class="pop__up-desc">
+          Front de Seine is an urban development started in the 1970s and situated in the 15th arrondissement of Paris. Comprised of several skyscrapers essentially in modernist styles and placed on a raised slab is a rare site in Paris, and is a great playground for any photographer interested in 20th century architecture.
+        </p>
+        <p class="pop__up-desc">
+          Taken in the space of a winter afternoon to evening, using pushed film, the photographs, and the ensuing book (inspired by french science fiction books of the 70S), show a subjective point of view, sometimes veering on abstraction, of the different buildings and architectural elements of the Front de Seine towering of the pedestrian.
+        </p>
+      </article>
     </main>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

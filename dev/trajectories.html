@@ -10,7 +10,13 @@
   <title>🔥 haus303 - Trajectories</title>
 </head>
 <body class="books" data-barba="wrapper">
-  <header>
+  <header class="header">
+    <div class="burger__menu">
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+  </div>
+  <div class="header__bg"></div>
     <a href="https://haus303.xyz" class="logo">
       <img src="img/hausSquiggRender.png" alt="" class="hausSguigg" id="logo-img">
     </a>
@@ -26,57 +32,72 @@
       </div>
       <nav class="main-nav nav-left">
         <!-- <a href="">Photography</a> -->
-        <a href="haus303.xyz">Home</a>
+        <a href="https://haus303.xyz">Home</a>
         <a href="books">Books</a>
         <a href="about">About</a>
-        <a href="contact">Contact</a>
+        <a href="about#contact__us">Contact</a>
         <!-- <a href="">Exhibitions</a> -->
         <!-- <a href="">Graphic Design</a> -->
       </nav>
-      
     </div>
     
+    <div class="top__bar">
+      <div class="marquee marquee3">
+        <div >
+          <p >
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+          </p>
+        </div>
+      </div>
+      <nav class="main-nav top__nav">
+        <a href="https://haus303.xyz">Home</a>
+        <a href="books">Books</a>
+        <a href="about">About</a>
+        <a href="about#contact__us">Contact</a>
+      </nav>
+    </div>
   </header>
   <!-- Main start -->
   <div class="wrapper">
     <main class="main single__book trajectories" data-barba="container" data-barba-namespace="canis" >
-        <div class="pop__up-visual">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/trajec1.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/trajec2.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/trajec3.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/trajec4.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/trajec5.webp" alt="">
-              </div>
+      <div class="pop__up-visual">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/trajec1.webp" alt="">
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-slide">
+              <img src="img/trajec2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/trajec3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/trajec4.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/trajec5.webp" alt="">
+            </div>
           </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <article class="pop__up-text">
-          <div class="pop__up__cross" onclick="history.back()" >
-            <span class="cross__line"></span>
-            <span class="cross__line"></span>
-          </div>
-          <h2>Trajectories</h2>
-          <span class="pop__up-book__details">2019 - 120 pages</span>
-          <p class="pop__up-desc">
-            Choosing as subjects many brutalist buildings in London that are either loved or hated (but that have become cult for architecture enthusiasts in any case), as well more recent constructions; Trajectories explores the recurrent idea, in our work as Haus303, of the journey to "meet" architecture. This book compares and highlights the subtile similarities and differences in the perception of the same buildings but by two different photographers.
-          </p>
-        </article>
+      </div>
+      <article class="pop__up-text">
+        <div class="pop__up__cross" onclick="history.back()" >
+          <span class="cross__line"></span>
+          <span class="cross__line"></span>
+        </div>
+        <h2>Trajectories</h2>
+        <span class="pop__up-book__details">2019 - 120 pages</span>
+        <p class="pop__up-desc">
+          Choosing as subjects many brutalist buildings in London that are either loved or hated (but that have become cult for architecture enthusiasts in any case), as well more recent constructions; Trajectories explores the recurrent idea, in our work as Haus303, of the journey to "meet" architecture. This book compares and highlights the subtile similarities and differences in the perception of the same buildings but by two different photographers.
+        </p>
+      </article>
     </main>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -8,6 +8,7 @@ ul {
     font-family: $content-font;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    
 }
 
 h2 {
@@ -36,6 +37,10 @@ li {
     width: 80%;
     margin: 0 auto;
     padding: 3em 0;
+    @media only screen and (max-width: 768px) {
+        min-width: 90%;
+        width: 90%;
+    }
 }
 
 .main {
@@ -54,19 +59,24 @@ li {
     img {
         max-width: 100%;
     }
+    @media only screen and (max-width: 1080px) {
+        margin-left: 0;
+    }
     @media only screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        padding-top: 10rem;
     }
 }
 
-.main:not(.home) {
-    padding-top: 10rem;
-}
+.main:not(.home) { padding-top: 10rem; }
 
 .books,
 .about {
     padding-top: 0;
     height: 100vh;
+    @media only screen and (max-width: 768px) {
+        height: auto;
+    }
 }
 

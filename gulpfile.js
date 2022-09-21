@@ -85,7 +85,7 @@ gulp.task('observation', gulp.parallel('browser-sync', 'sassification', 'htmlifi
     gulp.watch('dev/css/**/*.scss', gulp.series('sassification'));
     gulp.watch('dev/*.html', gulp.series('htmlification'));
     gulp.watch('dev/js/*.js', gulp.series('jsification'));
-    gulp.watch('dev/img/*', gulp.series('imgification'));
+    // gulp.watch('dev/img/*', gulp.series('imgification'));
 
     gulp.watch('prod/**/*').on('change', browserSync.reload);
 

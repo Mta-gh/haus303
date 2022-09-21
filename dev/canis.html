@@ -10,7 +10,13 @@
   <title>🐕 haus303 - Canis</title>
 </head>
 <body class="books" data-barba="wrapper">
-  <header>
+  <header class="header">
+    <div class="burger__menu">
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+      <span class="burger__dot"></span>
+  </div>
+  <div class="header__bg"></div>
     <a href="https://haus303.xyz" class="logo">
       <img src="img/hausSquiggRender.png" alt="" class="hausSguigg" id="logo-img">
     </a>
@@ -26,60 +32,76 @@
       </div>
       <nav class="main-nav nav-left">
         <!-- <a href="">Photography</a> -->
-        <a href="haus303.xyz">Home</a>
+        <a href="https://haus303.xyz">Home</a>
         <a href="books">Books</a>
         <a href="about">About</a>
-        <a href="contact">Contact</a>
+        <a href="about#contact__us">Contact</a>
         <!-- <a href="">Exhibitions</a> -->
         <!-- <a href="">Graphic Design</a> -->
       </nav>
       
     </div>
     
+    <div class="top__bar">
+      <div class="marquee marquee3">
+        <div >
+          <p >
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+            <span>haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ haus303 ✹ &nbsp;</span>
+          </p>
+        </div>
+      </div>
+      <nav class="main-nav top__nav">
+        <a href="https://haus303.xyz">Home</a>
+        <a href="books">Books</a>
+        <a href="about">About</a>
+        <a href="about#contact__us">Contact</a>
+      </nav>
+    </div>
   </header>
   <!-- Main start -->
   <div class="wrapper">
     <main class="main single__book canis" data-barba="container" data-barba-namespace="canis" >
-        <div class="pop__up-visual">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/canis1.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/canis2.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/canis4.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/canis3.webp" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/canis5.webp" alt="">
-              </div>
+      <div class="pop__up-visual">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/canis1.webp" alt="">
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-slide">
+              <img src="img/canis2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/canis4.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/canis3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/canis5.webp" alt="">
+            </div>
           </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <article class="pop__up-text">
-          <div class="pop__up__cross" onclick="history.back()" >
-            <span class="cross__line"></span>
-            <span class="cross__line"></span>
-          </div>
-          <h2>Canis</h2>
-          <span class="pop__up-book__details">2019 - 12 pages</span>
-          <p class="pop__up-desc">
-            The first part of an ongoing project, Canis stems from a desire to explore the links between humans and animals, and in particular the idea of ​​co-evolution as well as the idea of ​​symbiosis between dogs and humans, a close link that has existed and developed for millennia; but also to experiment how to take pictures of the animals, get on their physical level, or try to see how they apprehend their environment.
-          </p>
-          <p class="pop__up-desc">
-            It is also, and above all, simply the story of one man, my father, and his dog, Romeo, of their interactions and a brief glimpse into their lives.
-          </p>
-        </article>
+      </div>
+      <article class="pop__up-text">
+        <div class="pop__up__cross" onclick="history.back()" >
+          <span class="cross__line"></span>
+          <span class="cross__line"></span>
+        </div>
+        <h2>Canis</h2>
+        <span class="pop__up-book__details">2019 - 12 pages</span>
+        <p class="pop__up-desc">
+          The first part of an ongoing project, Canis stems from a desire to explore the links between humans and animals, and in particular the idea of ​​co-evolution as well as the idea of ​​symbiosis between dogs and humans, a close link that has existed and developed for millennia; but also to experiment how to take pictures of the animals, get on their physical level, or try to see how they apprehend their environment.
+        </p>
+        <p class="pop__up-desc">
+          It is also, and above all, simply the story of one man, my father, and his dog, Romeo, of their interactions and a brief glimpse into their lives.
+        </p>
+      </article>
     </main>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
