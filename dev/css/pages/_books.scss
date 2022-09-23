@@ -114,15 +114,29 @@
 
 .les__feux__deux {
     .threedbook {
-    &::before {
-        width: 1px;
-        background: #f0f2e6;
-    }
-    &::after {
-        background: url(../img/face2002.webp) center/cover;
-        transform: rotateY(180deg) translateZ(1px);
+        &::before {
+            width: 1px;
+            background: #f0f2e6;
+        }
+        &::after {
+            background: url(../img/face2002.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1px);
+        }
     }
 }
+
+.femme__liquide {
+    .threedbook {
+        aspect-ratio: 220 / 315;
+        &::before {
+            width: 10px;
+            background: url(../img/femmeliquide2.webp) center/cover;;
+        }
+        &::after {
+            background: url(../img/femmeliquide2.webp) center/cover;
+            transform: rotateY(180deg) translateZ(10px);
+        }
+    }
 }
 
 
