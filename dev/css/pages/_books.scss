@@ -49,9 +49,7 @@
         }
     }
     @media only screen and (max-width: 768px) {
-        &:hover .threedbook {
-            transform: rotateY(0);
-        }
+        &:hover .threedbook { transform: rotateY(0); }
     }
 }  
 
@@ -108,9 +106,7 @@
 }
 
 
-.les__feux__anim {
-    animation: spinny 2s infinite linear;
-}
+.les__feux__anim { animation: spinny 2s infinite linear; }
 
 .les__feux__deux {
     .threedbook {
