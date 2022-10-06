@@ -1,5 +1,4 @@
 
-
 // CSS 3d books
 
 .book-article {
@@ -146,5 +145,14 @@
     }
     100% {
         transform: rotateY(-360deg);
+    }
+}
+
+// publicity shots
+.publici {
+    .threedbook::before { display: none; }
+    .threedbook::after {
+        transform: rotateY(180deg) translateZ(1px) !important;
+
     }
 }
