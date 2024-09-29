@@ -208,6 +208,7 @@ function init() {
             top: e.pageY + 20
         });
     });
+    
 }
 init()
 
@@ -231,5 +232,3 @@ init()
 // async once(data) {
 //     contentAnimEnter();
 //     titleSplit()
-
-

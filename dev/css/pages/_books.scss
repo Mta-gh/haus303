@@ -105,7 +105,7 @@
 }
 
 
-.les__feux__anim { animation: spinny 2s infinite linear; }
+.les__feux__anim { animation: spinny 4s infinite linear; }
 
 .les__feux__deux {
     .threedbook {
@@ -114,8 +114,37 @@
             background: #f0f2e6;
         }
         &::after {
-            background: url(../img/face2002.webp) center/cover;
+            background: url(../img/tournesolsfinal_2.jpg) center/cover;
             transform: rotateY(180deg) translateZ(1px);
+        }
+    }
+}
+
+.les__cendres {
+    .threedbook {
+        width: 111px;
+        height: 300px;
+        &::before {
+            width: 1rem;
+            background: #bbfcc9;
+        }
+        &::after {
+            background: #bbfcc9;
+            transform: rotateY(180deg) translateZ(1rem);
+        }
+    }
+}
+
+.ack {
+    .threedbook {
+        aspect-ratio: 202 / 288;
+        &::before {
+            width:.5rem;
+            background: #f7f7f7;
+        }
+        &::after {
+            background: url(../img/ack-2.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1rem);
         }
     }
 }

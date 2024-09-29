@@ -10,10 +10,6 @@ let uglify = require('gulp-uglify');
 let pipeline = require('readable-stream').pipeline;
 var browserSync = require('browser-sync').create();
 
-
-
-
-
 // 🏄🛰️🏄🛰️🏄
 // 2. Mes tâches
 // 🏄🛰️🏄🛰️🏄
