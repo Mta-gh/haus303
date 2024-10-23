@@ -40,6 +40,7 @@
         }
         img {
             position: absolute;
+            z-index: 666;
             top: 0;
             left: 0;
             object-fit: cover;
@@ -109,6 +110,7 @@
 
 .les__feux__deux {
     .threedbook {
+
         &::before {
             width: 1px;
             background: #f0f2e6;
@@ -124,12 +126,21 @@
     .threedbook {
         width: 111px;
         height: 300px;
+        
+        img {
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: auto;
+            object-position: right;
+        }
+        
         &::before {
             width: 1rem;
-            background: #bbfcc9;
+            background: url(../../img/baucCover2.webp) center/cover;
         }
         &::after {
-            background: #bbfcc9;
+            background: url(../../img/baucCover2.webp) center/cover;
             transform: rotateY(180deg) translateZ(1rem);
         }
     }
