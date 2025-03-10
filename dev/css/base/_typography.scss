@@ -4,12 +4,45 @@
 
 @font-face {
     font-family: "Mattone";
-    src: url("../assets/Mattone-150.woff") format("woff2"),
-        url("../assets/Mattone-150.woff2") format("woff");
-  }
+    src: url("../assets/Mattone-150.woff2@") format("woff2"),
+    url("../assets/Mattone-150.woff") format("woff");
+}
 
-  @font-face {
+@font-face {
     font-family: "Ortica";
-    src: url("../assets/Ortica-Light.woff") format("woff2"),
-        url("../assets/Ortica-Light.woff2") format("woff");
-  }
+    src: url("../assets/Ortica-Light.woff2") format("woff2"),
+    url("../assets/Ortica-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Caribon";
+    src: url("../assets/Caribon-Regular.woff2") format("woff2"),
+    url("../assets/Caribon-Regularwoff") format("woff");
+}
+
+@font-face {
+    font-family: "Sinistre";
+    src: url("../assets/Sinistre-Regular.woff2") format("woff2"),
+    url("../assets/Sinistre-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "VG5000";
+    src: url("../assets/VG5000-Regular_web.woff2") format("woff2"),
+    url("../assets/VG5000-Regular_web.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SIRAP";
+    src: url("../assets/SIRAP.woff2") format("woff2"),
+    url("../assets/SIRAP.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Switzer-BlackItalic';
+    src: url('../assets/Switzer-BlackItalic.woff2') format('woff2'),
+    url('../assets/Switzer-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}

@@ -105,6 +105,54 @@ function enterAnim() {
     });
 }
 
+function fitText(el) {
+    const resizeText = () => {
+        let container = el.parentElement;
+        let computedStyle = getComputedStyle(container);
+        
+        let paddingX = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+        let paddingY = parseFloat(computedStyle.paddingTop) + parseFloat(computedStyle.paddingBottom);
+        
+        let width = container.clientWidth - paddingX;
+        let height = container.clientHeight - paddingY;
+        
+        let fontSize = 10; 
+        el.style.fontSize = fontSize + "px";
+        
+        while (el.scrollWidth <= width && el.scrollHeight <= height) {
+            fontSize++;
+            el.style.fontSize = fontSize + "px";
+        }
+        
+        el.style.fontSize = fontSize - 1 + "px";
+    };
+    
+    const observer = new ResizeObserver(resizeText);
+    observer.observe(el.parentElement);
+    resizeText();
+}
+
+function fitTextNoPadding(el) {
+    const resizeText = () => {
+        let container = el.parentElement;
+        let width = container.clientWidth;
+        let height = container.clientHeight;
+        let fontSize = 10; 
+        el.style.fontSize = fontSize + "px";
+        
+        while (el.scrollWidth <= width && el.scrollHeight <= height) {
+            fontSize++;
+            el.style.fontSize = fontSize + "px";
+        }
+        
+        el.style.fontSize = fontSize - 1 + "px";
+    };
+    
+    const observer = new ResizeObserver(resizeText);
+    observer.observe(el.parentElement);
+    
+    resizeText();
+}
 
 function init() {
     let tlSideBar = gsap.timeline();
@@ -209,6 +257,7 @@ function init() {
         });
     });
     
+    document.querySelectorAll(".fit__text").forEach((el) => fitText(el));
 }
 init()
 

@@ -110,7 +110,7 @@
 
 .les__feux__deux {
     .threedbook {
-
+        
         &::before {
             width: 1px;
             background: #f0f2e6;
@@ -160,6 +160,34 @@
     }
 }
 
+.coex {
+    .threedbook {
+        aspect-ratio: 3 / 4;
+        &::before {
+            width:.5rem;
+            background: #292929;
+        }
+        &::after {
+            background: url(../img/coex-L2-2.webp) center/cover;
+            transform: rotateX(180deg) translateZ(1rem);
+        }
+    }
+}
+
+.fire {
+    .threedbook {
+        aspect-ratio: 3 / 4;
+        &::before {
+            width:.5rem;
+            background: #df6236;
+        }
+        &::after {
+            background: url(../img/fire-back.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1rem);
+        }
+    }
+}
+
 .femme__liquide {
     .threedbook {
         aspect-ratio: 220 / 315;
@@ -193,5 +221,51 @@
     .threedbook::before { display: none; }
     .threedbook::after {
         transform: rotateY(180deg) translateZ(1px) !important;
+    }
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        gap: 3em;
+        padding-top: 2em;
+        // remove on phase 2
+        margin-left: 5.2rem;
+
+        h2 { grid-column: span 6;}
+
+        @media screen and (max-width: 1366px) {
+            grid-template-columns: repeat(4, 1fr);
+            h2 { grid-column: span 4;}
+        }
+        img {
+            max-width: 100%;
+        }
+        @media only screen and (max-width: 1080px) {
+            margin-left: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10rem;
+        }
+    }
+}
+
+.canis__symbiosis .threedbook {
+    &::before {
+        width: 1.3rem;
+        background: url(../img/treeSilver-small-back) center/cover;
+    }
+    &::after {
+        background: url(../img/treeSilver-small-back) center/cover;
+        transform: rotateY(180deg) translateZ(1rem);
     }
 }
