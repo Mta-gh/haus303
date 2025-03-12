@@ -105,6 +105,21 @@
     }
 }
 
+.de__lave {
+    .threedbook {
+        width: 111px;
+        height: 300px;
+        &::before {
+            width: 1rem;
+            background: #c5cedb;
+        }
+        &::after {
+            background: url(../img/de-lave/Delave_couv2.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1rem);
+        }
+    }
+}
+
 
 .les__feux__anim { animation: spinny 4s infinite linear; }
 
@@ -156,6 +171,34 @@
         &::after {
             background: url(../img/ack-2.webp) center/cover;
             transform: rotateY(180deg) translateZ(1rem);
+        }
+    }
+}
+
+.xenomorph {
+    .threedbook {
+        aspect-ratio: 3/4;
+        &::before {
+            width:.5rem;
+            background: #f7f7f7;
+        }
+        &::after {
+            background: url(../img/xenomorph/xenom-couv.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1rem);
+        }
+    }
+}
+
+.homo__facere {
+    .threedbook {
+        aspect-ratio: 3/4;
+        &::before {
+            width:.5rem;
+            background: #f7f7f7;
+        }
+        &::after {
+            background: url(../img/homo-facere/hf-couv.webp) center/cover;
+            transform: rotateY(180deg) translateZ(1rem) rotateY(180deg);
         }
     }
 }

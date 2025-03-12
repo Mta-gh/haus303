@@ -203,6 +203,7 @@ function init() {
             async enter(data) {
                 window.scrollTo(0, 0);
                 swiper();
+                document.querySelectorAll(".fit__text").forEach((el) => fitText(el));
                 // enterAnim()
             },
             async once(data) {
