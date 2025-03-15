@@ -60,6 +60,14 @@
   &:hover { 
     opacity: 1;
   }
+
+  @media screen and (max-width: 980px) {
+    width: 33%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 45%;
+  }
 }
 
 .swiper-button-next {
@@ -108,5 +116,9 @@
   }
   .cross__line:nth-of-type(2) {
     transform: rotate(-45deg);
+  }
+
+  @media screen and (max-width: 1080px) {
+    display: none;
   }
 }
